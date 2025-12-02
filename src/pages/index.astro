@@ -1,19 +1,69 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Markdown from '../components/Markdown.astro';
-
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
-
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
 ---
 
-<Layout title="Welcome to Astro.">
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
+<Layout title="Voimasi Sinussa — Hero">
+  <section class="hero">
+    <div class="overlay"></div>
+    
+    <h1 class="hero-title">
+      Erkka Sahlström — urheilijan mieli ei synny sattumalta.
+    </h1>
+
+    <p class="hero-text">
+      45 vuoden kokemus huippu-urheilusta<br />
+      MMA — Ammattilaisten Suomen & Pohjoismaiden mestaruudet + MM-titteliottelu (M1)<br />
+      +25 vuotta valmennusta: henkinen & fyysinen puoli yhdistettynä
     </p>
+
+  </section>
 </Layout>
+
+<style>
+  .hero {
+    background: #000000;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    position: relative;
+  }
+
+  .overlay {
+    background-image: url('/crown.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65%;
+    opacity: 0.10;
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    z-index: 1;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    z-index: 2;
+    max-width: 800px;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #D0D0D0;
+    z-index: 2;
+    max-width: 850px;
+  }
+
+  @media(max-width: 768px) {
+    .hero-title { font-size: 2rem; }
+    .hero-text { font-size: 1rem; }
+    .overlay { background-size: 90%; }
+  }
+</style>
