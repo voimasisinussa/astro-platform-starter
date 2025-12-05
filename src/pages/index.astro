@@ -3,20 +3,33 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Voimasi Sinussa — Hero">
-  <section class="hero">
-    <div class="overlay"></div>
-    
-    <h1 class="hero-title">
-      Erkka Sahlström — urheilijan mieli ei synny sattumalta.
-    </h1>
+ <section class="hero">
+  <div class="overlay"></div>
 
-    <p class="hero-text">
-      45 vuoden kokemus huippu-urheilusta<br />
-      MMA — Ammattilaisten Suomen & Pohjoismaiden mestaruudet + MM-titteliottelu (M1)<br />
-      +25 vuotta valmennusta: henkinen & fyysinen puoli yhdistettynä
-    </p>
+  <h1 class="hero-title">
+    Erkka Sahlström —<br />
+    urheilijan mieli ei synny sattumalta.
+  </h1>
 
-  </section>
+  <p class="hero-text">
+    45 vuoden kokemus huippu-urheilusta<br />
+    MMA — Ammattilaisten Suomen &amp; Pohjoismaiden mestaruudet + MM-titteliottelu (M1)<br />
+    +25 vuotta valmennusta: henkinen &amp; fyysinen puoli yhdistettynä
+  </p>
+
+  <p class="hero-tagline">
+    Lopeta selitykset.<br />
+    Tee se, minkä tiedät kuuluvan sinulle.<br />
+    Jos yrität kääntyä pois totuudestasi —<br />
+    minä vedän sinut takaisin siihen.<br />
+    Sinusta tulee vahvempi, halusit tai et.
+  </p>
+
+  <div class="hero-cta">
+    <a href="#aloita" class="btn btn-primary">Aloita muutos</a>
+    <a href="#valmennukset" class="btn btn-outline">Tutustu valmennuksiin</a>
+  </div>
+</section>
 </Layout>
 
 <style>
@@ -67,3 +80,4 @@ import Layout from '../layouts/Layout.astro';
     .overlay { background-size: 90%; }
   }
 </style>
+Lisätty uusi Hero-sekstio
