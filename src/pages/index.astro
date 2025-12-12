@@ -169,10 +169,54 @@ import Layout from '../layouts/Layout.astro';
     max-width: 850px;
   }
 
-  @media(max-width: 768px) {
-    .hero-title { font-size: 2rem; }
-    .hero-text { font-size: 1rem; }
-    .overlay { background-size: 90%; }
+  @media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1.25rem;
   }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.15;
+    max-width: 22ch;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 42ch;
+  }
+
+  .overlay {
+    background-size: 80%;
+    opacity: 0.22;
+  }
+
+  .hero-cta,
+  .course-cta,
+  .contact-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 420px;
+    padding: 0.95rem 1.1rem;
+  }
+
+  .course-steps li {
+    font-size: 1.05rem;
+    line-height: 1.55;
+  }
+
+  .contact-section p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+}
+
 </style>
 Lisätty uusi Hero-sekstio
