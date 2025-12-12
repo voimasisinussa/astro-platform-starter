@@ -134,6 +134,24 @@ import Layout from '../layouts/Layout.astro';
 .contact-cta {
   margin-top: 2rem;
 }
+/* CTA BUTTONS – hover & focus */
+
+.btn {
+  transition: all 0.25s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+  background-color: rgba(255,255,255,0.1);
+  border-color: #ffffff;
+  color: #ffffff;
+}
   .hero-title {
     font-size: 2.8rem;
     font-weight: 700;
