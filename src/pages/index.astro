@@ -118,7 +118,7 @@ import Layout from '../layouts/Layout.astro';
     <article class="service-card">
       <h3>RYHMÄVALMENNUS</h3>
       <p class="service-lead">Voimaa yhteisöstä, energiaa ryhmästä, selkeyttä elämääsi.</p>
-
+<p class="service-quote">"Yhteys tekee arjesta selkeämmän — ja työstä kevyemmän."</p>
      <h4>1. Kenelle ryhmävalmennus sopii?</h4>
 <ul>
   <li>Työyhteisöille – lisää yhteishenkeä, jaksamista ja vuorovaikutusta.</li>
@@ -152,7 +152,7 @@ import Layout from '../layouts/Layout.astro';
 <article class="service-card">
   <h3>RAVINTOVALMENNUS</h3>
   <p class="service-lead">Selkeyttä syömiseen, energiaa arkeen ja tuloksiin – ilman ääripäitä.</p>
-
+<p class="service-quote">"Syö niin, että arki kantaa — ja treeni kulkee."</p>
   <h4>1. Kenelle ravintovalmennus sopii?</h4>
   <ul>
     <li>Sinulle, joka haluat jaksamisen ja palautumisen kuntoon.</li>
@@ -184,7 +184,7 @@ import Layout from '../layouts/Layout.astro';
     <article class="service-card">
       <h3>KILPAILUVALMENNUS</h3>
       <p class="service-lead">Henkinen kilpailuvalmennus urheilijalle, joka haluaa olla valmis silloin kun sillä on merkitystä</p>
-
+<p class="service-quote">"Kun paine kasvaa — sinä pysyt kasassa."</p>
       <h4>1. Kenelle tämä sopii?</h4>
       <ul>
         <li>Henkilölle, joka haluaa henkilökohtaista sparrausta ja konkreettisia tuloksia</li>
@@ -243,7 +243,12 @@ import Layout from '../layouts/Layout.astro';
   opacity: 0.9;
   line-height: 1.55;
 }
-
+.service-quote {
+  margin: -0.4rem 0 1.2rem;
+  opacity: 0.88;
+  line-height: 1.45;
+  font-style: italic;
+}
 /* --- CHECKLIST (ul class="checklist") --- */
 .checklist {
   list-style: none;
