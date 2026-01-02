@@ -193,83 +193,7 @@ import Layout from '../layouts/Layout.astro';
     </article>
   </div>
 </section>
-/* --- SERVICES / CARDS --- */
-.services-section {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem;
-}
 
-.service-card {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.10);
-  border-radius: 14px;
-  padding: 1.8rem 1.8rem 1.4rem;
-  margin: 1.4rem 0;
-}
-
-.service-card h3 {
-  margin: 0 0 0.7rem;
-  letter-spacing: 0.5px;
-}
-.service-card h4 {
-  margin: 1.2rem 0 0.6rem;
-}
-
-
-.service-lead {
-  margin: 0 0 1.2rem;
-  opacity: 0.9;
-  line-height: 1.55;
-}
-.service-quote {
-  margin: 0.2rem 0 1.2rem;
-  opacity: 0.88;
-  line-height: 1.45;
-  font-style: italic;
-}
-/* --- CHECKLIST (ul class="checklist") --- */
-.checklist {
-  list-style: none;
-  padding-left: 0;
-  margin: 0.6rem 0 1.2rem;
-}
-
-.checklist li {
-  position: relative;
-  padding-left: 1.8rem;
-  margin: 0.55rem 0;
-  line-height: 1.55;
-}
-
-.checklist li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  top: 0,15rem;
-  opacity: 0.9;
-}
-
-/* --- CTA buttons inside service cards --- */
-.service-cta {
-margin-top: 1.6rem;
-padding-top: 0.3rem;
-}
-
-.service-cta .btn {
-  display: inline-block;
-}
-
-/* --- CONTACT SECTION polish --- */
-.contact-section {
-  padding: 3rem 1.5rem;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.contact-cta {
-  margin-top: 1.2rem;
-}
 <section id="yhteys" class="contact-section">
   <h3>Ota yhteyttä</h3>
 
@@ -406,6 +330,84 @@ padding-top: 0.3rem;
     margin-top: 2rem; 
   }
 }
+/* --- SERVICES / CARDS --- */
+.services-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
 
+.service-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 14px;
+  padding: 1.8rem 1.8rem 1.4rem;
+  margin: 1.4rem 0;
+}
+
+.service-card h3 {
+  margin: 0 0 0.7rem;
+  letter-spacing: 0.5px;
+}
+
+.service-card h4 {
+  margin: 1.2rem 0 0.6rem;
+}
+
+.service-lead {
+  margin: 0 0 1.2rem;
+  opacity: 0.9;
+  line-height: 1.55;
+}
+
+.service-quote {
+  margin: 0.2rem 0 1.2rem;
+  opacity: 0.88;
+  line-height: 1.45;
+  font-style: italic;
+}
+
+/* --- CHECKLIST (ul class="checklist") --- */
+.checklist {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.6rem 0 1.2rem;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 1.8rem;
+  margin: 0.55rem 0;
+  line-height: 1.55;
+}
+
+.checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  opacity: 0.9;
+}
+
+/* --- CTA buttons inside service cards --- */
+.service-cta {
+  margin-top: 1.6rem;
+  padding-top: 0.3rem;
+}
+
+.service-cta .btn {
+  display: inline-block;
+}
+
+/* --- CONTACT SECTION polish --- */
+.contact-section {
+  padding: 3rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-cta {
+  margin-top: 1.2rem;
+}
 </style>
 
